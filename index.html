@@ -1,11 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chew Cup Interactive</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Playful rounded font -->
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
@@ -21,6 +20,7 @@
       color: #F5F0E1;             /* light cream */
       font-family: 'Fredoka One', sans-serif;
       text-align: center;
+      position: relative;
     }
     /* Logo sizing */
     .logo {
@@ -28,6 +28,10 @@
       width: 80%;
       height: auto;
       margin-bottom: 1rem;
+      -webkit-user-drag: none;
+      user-drag: none;
+      user-select: none;
+      pointer-events: none;
     }
     /* Tagline styling */
     .tagline {
@@ -44,12 +48,38 @@
     .privacy-link:hover {
       opacity: 0.8;
     }
+    .contact-btn {
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border: 2px solid white;
+      border-radius: 6px;
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+    .contact-btn:hover {
+      opacity: 0.8;
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <!-- Ensure logo.png is placed alongside this file -->
-  <img src="logo.jpg" alt="Chew Cup Interactive Logo" class="logo">
-  <p class="tagline">Serious Fun, Zero Seriousness</p>
-  <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+  <img src="logo.jpg" alt="Chew Cup Interactive Logo" class="logo" draggable="false" ondragstart="return false;">
+  <p class="tagline">Serious Fun, Zero Seriousness.</p>
+  <button class="contact-btn" onclick="window.location.href='mailto:chewcupinteractive@gmail.com'">
+    CONTACT US
+  </button>
+  <footer>
+    <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+  </footer>
 </body>
 </html>
