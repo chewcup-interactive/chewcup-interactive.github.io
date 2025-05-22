@@ -14,8 +14,6 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       background-color: #7b56b9; /* purple from logo */
       color: #F5F0E1;             /* light cream */
       font-family: 'Montserrat', sans-serif;
@@ -72,17 +70,26 @@
       text-align: center;
       padding: 1rem 0;
     }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <!-- Ensure logo.png is placed alongside this file -->
-  <img src="logo.jpg" alt="Chew Cup Interactive Logo" class="logo" draggable="false" ondragstart="return false;">
-  <p class="tagline">Playfully Built, Seriously Good.</p>
-  <p>Stay tuned for our first game release! Coming soon.</p>
-  <p></p>
-  <button class="contact-btn" onclick="window.location.href='mailto:hi@chewcup.com'">
-    GET IN TOUCH
-  </button>
+  <div class="content">
+    <!-- Ensure logo.png is placed alongside this file -->
+    <img src="logo.jpg" alt="Chew Cup Interactive Logo" class="logo" draggable="false" ondragstart="return false;">
+    <p class="tagline">Playfully Built, Seriously Good.</p>
+    <p>Stay tuned for our first game release! Coming soon.</p>
+    <p></p>
+    <button class="contact-btn" onclick="window.location.href='mailto:hi@chewcup.com'">
+      GET IN TOUCH
+    </button>
+  </div>
   <footer>
     <a href="/privacy/" class="privacy-link">Privacy Policy</a>
   </footer>
