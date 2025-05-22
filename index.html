@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chew Cup Interactive</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Playful rounded font -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <!-- Playful rounded font and lighter text font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     /* Full-screen, centered layout */
     body {
@@ -18,9 +18,10 @@
       align-items: center;
       background-color: #7b56b9; /* purple from logo */
       color: #F5F0E1;             /* light cream */
-      font-family: 'Fredoka One', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
       position: relative;
+      font-weight: 300;
     }
     /* Logo sizing */
     .logo {
@@ -35,6 +36,8 @@
     }
     /* Tagline styling */
     .tagline {
+      font-family: 'Fredoka One', sans-serif;
+      font-weight: 400;
       font-size: 1.5rem;
       margin: 0.5rem 0 2rem;
     }
@@ -64,19 +67,21 @@
       opacity: 0.8;
     }
     footer {
-      position: absolute;
-      bottom: 1rem;
+      margin-top: auto;
       width: 100%;
       text-align: center;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
   <!-- Ensure logo.png is placed alongside this file -->
   <img src="logo.jpg" alt="Chew Cup Interactive Logo" class="logo" draggable="false" ondragstart="return false;">
-  <p class="tagline">Serious Fun, Zero Seriousness.</p>
-  <button class="contact-btn" onclick="window.location.href='mailto:chewcupinteractive@gmail.com'">
-    CONTACT US
+  <p class="tagline">Playfully Built, Seriously Good.</p>
+  <p>Stay tuned for our first game release! Coming soon.</p>
+  <p></p>
+  <button class="contact-btn" onclick="window.location.href='mailto:hi@chewcup.com'">
+    GET IN TOUCH
   </button>
   <footer>
     <a href="/privacy/" class="privacy-link">Privacy Policy</a>
